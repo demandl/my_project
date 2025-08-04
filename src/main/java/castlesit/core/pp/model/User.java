@@ -3,6 +3,7 @@ package castlesit.core.pp.model;
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Optional;
 
 @Table
 public class User {
@@ -52,8 +53,8 @@ public class User {
         this.lastName = lastName;
     }
 
-    public Byte getAge() {
-        return age;
+    public Optional<Byte> getAge() {
+        return Optional.of(age);
     }
 
     public void setAge(Byte age) {
