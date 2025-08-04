@@ -20,7 +20,7 @@ public class Main {
         userDao.saveUser("Name3", "LastName3", (byte) 33);
         userDao.saveUser("Name4", "LastName4", (byte) 44);
 
-        userDao.removeUserById(3);
+        //userDao.removeUserById(1);
         userDao.getAllUsers();
         userDao.cleanUsersTable();
         userDao.dropUsersTable();
